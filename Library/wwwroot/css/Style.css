@@ -1,26 +1,35 @@
-﻿.logo {
+﻿body {
+    background-image: url("/images/bkg2.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
     font-family: "Coda";
     font-size: 1.8em;
     font-weight: bold;
 }
 
-    .logo > a {
-        color: #ddd;
-        text-decoration: none;
-        transition-duration: 0.5s;
-    }
+.logo > a {
+    color: #ddd;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
 
-        .logo > a:hover {
-            color: #fff;
-            transition: ease;
-            text-decoration: none;
-            transition-duration: 0.5s;
-        }
+.logo > a:hover {
+    color: #fff;
+    transition: ease;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
 
 .page-content {
     padding: 20px;
     margin: 10px auto;
+
 }
+
 
 .page-heading {
     color: #e9e8e7;
@@ -62,10 +71,10 @@
     color: #fff;
 }
 
-/*.homeLabel {
-    background-color: rgba(0,0,0,0.3);
+.homeLabel {
+    /*background-color: #e9e8e7;*/
     padding: 4px;
-}*/
+}
 
 #catalog {
     background: url('/images/books.jpg') bottom right 15% no-repeat #555;
@@ -200,4 +209,8 @@
 #patronNoFees {
     color: #2f6fc7;
     font-weight: bold;
+}
+
+footer {
+    position: absolute;
 }

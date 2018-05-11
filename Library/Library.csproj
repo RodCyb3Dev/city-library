@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Remove="Properties\PublishProfiles\CustomProfile.pubxml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +17,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer.Design" Version="1.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="1.1.1" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="1.1.2" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="1.1.1" />
@@ -33,10 +34,15 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Properties\PublishProfiles\" />
-    <Folder Include="Views\Shared\" />
+    <Folder Include="wwwroot\images\Icons\" />
     <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\favicon.ico">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

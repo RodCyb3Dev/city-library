@@ -5,10 +5,19 @@ using System.Collections.Generic;
 namespace Library.Models.Patron
 {
     public class PatronDetailModel
-        {
+    {
             public int Id { get; set; }
             public string FirstName { get; set; }
             public string LastName { get; set; }
+
+        //  public string FullName
+        //  {
+        //      get
+        //     {
+        //         return FirstName + " " + LastName;
+        //      }
+        //  }
+
             public int LibraryCardId { get; set; }
             public string Address { get; set; }
             public DateTime MemberSince { get; set; }
@@ -19,6 +28,6 @@ namespace Library.Models.Patron
             public IEnumerable<Checkout> AssetsCheckedOut { get; set; }
             public IEnumerable<CheckoutHistory> CheckoutHistory { get; set; }
             public IEnumerable<Hold> Holds { get; set; }
-        }
     }
+}
 
